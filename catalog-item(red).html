@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Продукт "Набор для путешествий"</title>
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="navigation-list">
+				<ul>
+					<li>
+						<a href="#">Главная</a>
+					</li>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li class="active">
+						<a href="#">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="user-block">
+			<a class="login" href="#">Войти</a>
+		</div>
+	</header>
+	
+	<main class="contain clearfix">
+		<div class="contain clearfix">
+			<h1 class="contain-title">Набор для путешествий "Baxter of California"</h1>
+			<div class="contain-breadcrumbs">  <!--  См. catalog.html    -->
+				<a href="#">Главная</a>
+				<a href="#">Магазин</a>
+				<a href="#">Средства для ухода</a>
+				<a href="#" disabled>Набор для путешествий "Baxter of California"</a> <!--  См. catalog.html    -->
+			</div>
+		</div>
+		<div class="contain-images">
+			<figure> <!--  Каждое изображение в отдельный figure лучше заключить.    -->
+				<img src="#" alt="Travel Kit" class="images-big">
+				<img src="#" alt="Travel Kit 1" class="images-prev-1"> <!--  Это должны быть ссылки. Зачем разные классы для одинаковых элементов? Ну и не помешает их обернуть в контейнер, для отделения от большого изображения.    -->
+				<img src="#" alt="Travel Kit 2" class="images-prev-2">
+				<img src="#" alt="Travel Kit 3" class="images-prev-3">
+			</figure>
+		</div>
+		<div class="contain-info">
+			<p class="info-stock">Есть в наличии</p>
+			<p class="info-article">Артикул: Dexter-AE</p>
+			<section class="info-description">
+				Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и уходя за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем  для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+			</section>
+			<div class="info-price"> <!--  блок идентичный тому что в catalog.html  Должен быть копипаст  -->
+					2 900 РУБ.
+			</div>
+			<a class="btn" href="#">Купить</a>
+			<section class="info-contains">
+				<h2>В набор входят:</h2>
+				<ul> <!--  Класс для списка нужен    -->
+					<li>Средство для умывания (50мл)</li>
+					<li>Увлажняющий крем (50мл)</li>
+					<li>Крем для бритья (50мл)</li>
+					<li>Крем после бритья, шампунь (50мл)</li>
+					<li>Удобная кожаная косметичка</li>
+				</ul>
+			</section>
+		</div>
+	</main>
+
+
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти</a>
+				телефон: +7 (495) 666-02-66
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить</p>
+				<a href="#" class="social social-vk">Вконтакте</a>
+				<a href="#" class="social social-fb">Фейсбук</a>
+				<a href="#" class="social social-instgrm">Инстаграм</a>
+			</section>
+			<section class="footer-copyright">
+				<p>Дизайн сайта:</p>
+				<a href="#" class="btn">htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+
+</body>
+</html>
