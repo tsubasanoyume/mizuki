@@ -37,87 +37,128 @@
 	<main class="contain clearfix">
 		<div class="contain-header">
 			<h1 class="contain-title">Средства для ухода</h1>
-			<div class="contain-breadcrumbs">
+			<div class="breadcrumbs"> <!--   Можно класс без contain-, просто breadcrumbs. Это устоявшийся термин   -->
 				<a href="#">Главная</a>
 				<a href="#">Магазин</a>
-				<a href="#" disabled>Средства для ухода</a>
+				<a href="#" class="breadcrumbs-active">Средства для ухода</a>  <!--   Здесь дело не в отключении, тем более у ссылок нет такого атрибута.  Это стилизация элемента такая. -->
 			</div>
 		</div>
-		<div class="contain-filters">
-			<h2 class="filters-title">Производители</h2>
-			<input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
-			<label for="baxter-of-california"> Baxter of California</label><br>
-			<input type="checkbox" name="natty" id="natty">
-			<label for="natty">MR Natty</label><br>
-			<input type="checkbox" name="suavecito" id="suavecito" checked>
-			<label for="suavecito">Suavecito</label><br>
-			<input type="checkbox" name="malin" id="malin">
-			<label for="malin">Malin+Goetz</label><br>
-			<input type="checkbox" name="murray" id="murray">
-			<label for="murray">Murray's</label><br>
-			<input type="checkbox" name="crew" id="crew" checked>
-			<label for="crew">American Crew</label><br>
-			<h2 class="filters-title">Группы товатов</h2>
-			<input type="radio" name="shaving-accessories" id="shaving-accessories" checked>
-			<label for="shaving-accessories">Бритвенные пренадлежности</label><br>
-			<input type="radio" name="goods-of-care" id="goods-of-care">
-			<label for="goods-of-care">Средства для ухода</label><br>
-			<input type="radio" name="accessories" id="accessories">
-			<label for="accessories">Аксессуары</label><br>
-			<a class="btn" href="#">Показать</a>
+
+		<div class="filters">  <!--  Можно выделить в самостоятельный большой блок убрав префикс.    -->
+			<form action="/echo" method="post">
+				<div class="filters-maker">
+					<h2 class="filters-title">Производители</h2>  <!--  Страшный поток кода. Где форматирование? Так как это форма должен быть тег <form>   -->
+					
+					<input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
+					<label for="baxter-of-california"> Baxter of California</label>  <!--  Тег <br> лишний, переносы будут с помощью css.    -->
+					
+					<input type="checkbox" name="natty" id="natty">
+					<label for="natty">MR Natty</label>
+					
+					<input type="checkbox" name="suavecito" id="suavecito" checked>
+					<label for="suavecito">Suavecito</label>
+					
+					<input type="checkbox" name="malin" id="malin">
+					<label for="malin">Malin+Goetz</label>
+					
+					<input type="checkbox" name="murray" id="murray">
+					<label for="murray">Murray's</label>
+					
+					<input type="checkbox" name="crew" id="crew" checked>
+					<label for="crew">American Crew</label>
+				</div>
+				<div class="filters-category">
+					<h2 class="filters-title">Группы товатов</h2>
+					<input type="radio" name="category" id="shaving-accessories" value="shaving-accessories" checked>  <!-- У radionbutton  должен быть одинаковый атрибут name иначе оно работать не будет. И нужно указать атрибут value    -->
+					<label for="shaving-accessories">Бритвенные пренадлежности</label>
+
+					<input type="radio" name="category" id="goods-of-care" value="goods-of-care">
+					<label for="goods-of-care">Средства для ухода</label>
+
+					<input type="radio" name="category" id="accessories" value="accessories">
+					<label for="accessories">Аксессуары</label>
+				</div>
+
+				<input type="submit" class="btn" value="Показать">  <!-- Так как это форма, нужно использовать <input type="submit">      -->
+			</form>	
 		</div>
-		<div class="contain-products">
+
+		<div class="products">  <!--   Тоже большой контейнер, можно без префикса.   -->
 			<article class="products-item">
-				<img src="#" alt="Набор для путешествий">
-				<p>Набор для путешествий <span class="products-title">"Baxter of California"</span></p><br>
+				<a href="catalog-item.html">
+					<img src="#" alt="Набор для путешествий">  <!--  По ТЗ это должна быть ссылка на карточку товара    -->
+				</a>
+				<a href="catalog-item.html">
+					Набор для путешествий <span class="products-title">"Baxter of California"</span>  <!--  И это.    -->
+				</a><br>
 				<div class="products-price">
 					2 900 РУБ.
+					<a class="btn" href="#">Купить</a>  <!--  Кнопку нужно к цене засунуть, иначе не получится как на макете.   -->
 				</div>
-				<a class="btn" href="#">Купить</a>
 			</article>
 			<article class="products-item">
-				<img src="#" alt="Увлажняющий кондиционер">
-				<p>Увлажняющий кондиционер <span class="products-title">"Baxter of California"</span></p><br>
+				<a href="#">
+					<img src="#" alt="Увлажняющий кондиционер">
+				</a>
+				<a href="#">
+					Увлажняющий кондиционер <span class="products-title">"Baxter of California"</span>
+				</a><br>
 				<div class="products-price">
 					750 РУБ.
+					<a class="btn" href="#">Купить</a>
 				</div>
-				<a class="btn" href="#">Купить</a>
 			</article>
 			<article class="products-item">
-				<img src="#" alt="Гель для волос">
-				<p>Гель для волос <span class="products-title">"Sauvecito"</span></p><br>
+				<a href="#">
+					<img src="#" alt="Гель для волос">
+				</a>
+				<a href="#">
+					Гель для волос <span class="products-title">"Sauvecito"</span>
+				</a><br>
 				<div class="products-price">
 					290 РУБ.
+					<a class="btn" href="#">Купить</a>
 				</div>
-				<a class="btn" href="#">Купить</a>
 			</article>
 			<article class="products-item">
-				<img src="#" alt="Гель для укладки волос">
-				<p>Гель для укладки волос <span class="products-title">"American Crew"</span></p><br>
+				<a href="#">
+					<img src="#" alt="Гель для укладки волос">
+				</a>
+				<a href="#">
+					Гель для укладки волос <span class="products-title">"American Crew"</span>
+				</a><br>
 				<div class="products-price">
 					500 РУБ.
+					<a class="btn" href="#">Купить</a>
 				</div>
-				<a class="btn" href="#">Купить</a>
 			</article>
 			<article class="products-item">
-				<img src="#" alt="Гель для волос">
-				<p>Гель для волос <span class="products-title">"American Crew"</span></p><br>
+				<a href="#">
+					<img src="#" alt="Гель для волос">
+				</a>
+				<a href="#">
+					Гель для волос <span class="products-title">"American Crew"</span>
+				</a><br>
 				<div class="products-price">
 					300 РУБ.
+					<a class="btn" href="#">Купить</a>
 				</div>
-				<a class="btn" href="#">Купить</a>
 			</article>
 			<article class="products-item">
-				<img src="#" alt="Набор для бритья">
-				<p>Набор для бритья <span class="products-title">"Baxter of California"</span></p><br>
+				<a href="#">
+					<img src="#" alt="Набор для бритья">
+				</a>
+				<a href="#">
+					Набор для бритья <span class="products-title">"Baxter of California"</span>
+				</a><br>
 				<div class="products-price">
 					3 900 РУБ.
+					<a class="btn" href="#">Купить</a>
 				</div>
-				<a class="btn" href="#">Купить</a>
 			</article>
 			<div class="products-paginator">
 				<a href="#">1</a>
-				<a href="#" disabled>2</a>
+				<a href="#" class="paginator-active">2</a>  <!--   Нужен класс, а не disabled. Тоже самое что и в хлебных крошках.   -->
 				<a href="#">3</a>
 				<a href="#">4</a>
 			</div>
