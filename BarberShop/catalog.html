@@ -37,17 +37,17 @@
 	<main class="contain clearfix">
 		<div class="contain-header">
 			<h1 class="contain-title">Средства для ухода</h1>
-			<div class="breadcrumbs"> <!--   Можно класс без contain-, просто breadcrumbs. Это устоявшийся термин   -->
+			<div class="breadcrumbs">
 				<a href="#">Главная</a>
 				<a href="#">Магазин</a>
-				<a href="#" class="breadcrumbs-active">Средства для ухода</a>  <!--   Здесь дело не в отключении, тем более у ссылок нет такого атрибута.  Это стилизация элемента такая. -->
+				<a href="#" class="breadcrumbs-active">Средства для ухода</a>
 			</div>
 		</div>
 
-		<div class="filters">  <!--  Можно выделить в самостоятельный большой блок убрав префикс.    -->
+		<div class="filters">
 			<form action="/echo" method="post">
 				<div class="filters-maker">
-					<h2 class="filters-title">Производители</h2>  <!--  Страшный поток кода. Где форматирование? Так как это форма должен быть тег <form>   -->
+					<h2 class="filters-title">Производители</h2>
 					
 					<input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
 					<label for="baxter-of-california"> Baxter of California</label>  <!--  Тег <br> лишний, переносы будут с помощью css.    -->
@@ -69,7 +69,7 @@
 				</div>
 				<div class="filters-category">
 					<h2 class="filters-title">Группы товатов</h2>
-					<input type="radio" name="category" id="shaving-accessories" value="shaving-accessories" checked>  <!-- У radionbutton  должен быть одинаковый атрибут name иначе оно работать не будет. И нужно указать атрибут value    -->
+					<input type="radio" name="category" id="shaving-accessories" value="shaving-accessories" checked>
 					<label for="shaving-accessories">Бритвенные пренадлежности</label>
 
 					<input type="radio" name="category" id="goods-of-care" value="goods-of-care">
@@ -79,21 +79,21 @@
 					<label for="accessories">Аксессуары</label>
 				</div>
 
-				<input type="submit" class="btn" value="Показать">  <!-- Так как это форма, нужно использовать <input type="submit">      -->
+				<input type="submit" class="btn" value="Показать">
 			</form>	
 		</div>
 
-		<div class="products">  <!--   Тоже большой контейнер, можно без префикса.   -->
+		<div class="products">
 			<article class="products-item">
 				<a href="catalog-item.html">
-					<img src="#" alt="Набор для путешествий">  <!--  По ТЗ это должна быть ссылка на карточку товара    -->
+					<img src="#" alt="Набор для путешествий">
 				</a>
 				<a href="catalog-item.html">
-					Набор для путешествий <span class="products-title">"Baxter of California"</span>  <!--  И это.    -->
+					Набор для путешествий <span class="products-title">"Baxter of California"</span>
 				</a><br>
 				<div class="products-price">
 					2 900 РУБ.
-					<a class="btn" href="#">Купить</a>  <!--  Кнопку нужно к цене засунуть, иначе не получится как на макете.   -->
+					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
 			<article class="products-item">
@@ -156,9 +156,9 @@
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<div class="products-paginator">
+			<div class="paginator"> <!--	Paginator, кстати тоже можно использовать без префикса.		-->
 				<a href="#">1</a>
-				<a href="#" class="paginator-active">2</a>  <!--   Нужен класс, а не disabled. Тоже самое что и в хлебных крошках.   -->
+				<a href="#" class="paginator-active">2</a>
 				<a href="#">3</a>
 				<a href="#">4</a>
 			</div>
