@@ -37,7 +37,7 @@
 		</div>
 		<div class="contain-causes main-causes">
 			<h2>Настоящий городок</h2>
-			<p>- №1 -</p>
+			<p>№1</p>
 			<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
 			<figure>
 				<img src="#" alt="Седона">
@@ -65,23 +65,23 @@
 				<img src="#" alt="Мост Дьявола">
 			</figure>
 			<h2>Там есть мост Дьявола</h2>
-			<p>- №2 -</p>
+			<p>№2</p>
 			<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>			
 		</div>
 		<section class="contain-causes last-causes">
 			<div>
 				<h2>Небольшая площадь</h2>
-				<p>- №3 -</p>
+				<p>№3</p>
 				<p>Все достопримечательности находятся очень близко</p>			
 			</div>
 			<div>
 				<h2>Красивая дорога</h2>
-				<p>- №4 -</p>
+				<p>№4</p>
 				<p>Ехать в Седону из Лаг-Вегаса совсем не скучно!</p>			
 			</div>
 			<div>
 				<h2>Мало туристов</h2>
-				<p>- №5 -</p>
+				<p>№5</p>
 				<p>Большинство едет в Гранд Каньон и толпится там</p>			
 			</div>
 		</section>
@@ -90,6 +90,23 @@
 			<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 			<div class="search-button">
 				<a href="#">Поиск гостиницы в Седоне</a>
+			</div>
+			<div class="search-form">
+				<form action="/echo" method="post">
+					<label for="date-start">Дата заезда</label>
+					<input type="text" name="date-start" id="date-start"><br>
+
+					<label for="date-end">Дата выезда</label>
+					<input type="text" name="date-end" id="date-end"><br>
+
+					<label for="adult">Взрослые</label>
+					<input type="text" name="adult" id="adult">
+
+					<label for="child">Дети</label>
+					<input type="text" name="child" id="child"><br>
+
+					<input type="submit" value="Найти">
+				</form>
 			</div>
 			<div class="search-map">
 				<figure>
