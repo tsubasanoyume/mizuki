@@ -40,7 +40,11 @@
 		</div>
 		<div class="contain-causes main-causes">
 			<h2>Настоящий городок</h2>
+<<<<<<< HEAD
 			<p>№1</p> <!-- Нет черточек по бокам -->
+=======
+			<p>№1</p>
+>>>>>>> origin/master
 			<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
 			<figure> <!-- Наверное стоит добавить класс, сюда или к изображению. -->
 				<img src="#" alt="Седона">
@@ -98,6 +102,23 @@
 				<form action="/echo" method="post">
 					<label for="date-start">Дата заезда</label>
 					<input type="text" name="date-start" id="date-start"><br> <!--В данном случае проще инпуты обернуть в лэйблы и тогда не нужно париться с id -->
+
+					<label for="date-end">Дата выезда</label>
+					<input type="text" name="date-end" id="date-end"><br>
+
+					<label for="adult">Взрослые</label>
+					<input type="text" name="adult" id="adult">
+
+					<label for="child">Дети</label>
+					<input type="text" name="child" id="child"><br>
+
+					<input type="submit" value="Найти">
+				</form>
+			</div>
+			<div class="search-form">
+				<form action="/echo" method="post">
+					<label for="date-start">Дата заезда</label>
+					<input type="text" name="date-start" id="date-start"><br>
 
 					<label for="date-end">Дата выезда</label>
 					<input type="text" name="date-end" id="date-end"><br>
