@@ -1,0 +1,11 @@
+body {
+	font-size: 14px;
+	line-height: 21px;
+	font-family: "Times New Roman";
+	text-transform: uppercase;
+}
+
+h1, h2 {
+	font-size: 21px;
+	line-height: 26px;
+}
