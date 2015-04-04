@@ -4,7 +4,8 @@
 	<title>Седона - Поиск гостиниц</title>
 </head>
 <body>
-	<header class="main-header clearfix">
+	<div class="positioner">
+		<header class="main-header">
 		<div class="header-logo">
 			<a href="index.html">
 				<img src="#" alt="Город Седона" class="logo">
@@ -28,169 +29,172 @@
 				</ul>
 			</nav>		
 		</div>
-	</header>
+		</header>
 
-	<main class="main-contain clearfix">
-		<div class="filters">
-			<form action="/echo" method="post">
-				<div class="filters-infrastructure">
-					<h2 class="filters-title">Инфраструктура:</h2>
+		<main class="main-contain">
+			<div class="filters">
+				<form action="/echo" method="post">
+					<div class="filters-infrastructure">
+						<h2 class="filters-title">Инфраструктура:</h2>
 
-					<input type="checkbox" name="pool" id="pool" checked> 
-					<label for="pool">Бассейн</label><br>
+						<input type="checkbox" name="pool" id="pool" checked> 
+						<label for="pool">Бассейн</label><br>
 
-					<input type="checkbox" name="parking" id="parking">
-					<label for="parking">Парковка</label><br>
+						<input type="checkbox" name="parking" id="parking">
+						<label for="parking">Парковка</label><br>
 
-					<input type="checkbox" name="wifi" id="wifi">
-					<label for="wifi">Wi-Fi</label><br>
-				</div>
-				<div class="filters-housing">
-					<h2 class="filters-title">Тип жилья:</h2>
-
-					<input type="checkbox" name="hotel" id="hotel" checked>
-					<label for="hotel">Гостиница</label>
-
-					<input type="checkbox" name="molel" id="molel" checked>
-					<label for="molel">Мотель</label>
-
-					<input type="checkbox" name="apartements" id="apartements" checked>
-					<label for="apartements">Апартаменты</label>
-				</div>
-				<div class="filters-price">
-					<h2 class="filters-title">Стоимость в сутки (Р):</h2>
-
-					<div class="price-result">
-					
+						<input type="checkbox" name="wifi" id="wifi">
+						<label for="wifi">Wi-Fi</label><br>
 					</div>
-					<div class="price-range">
+					<div class="filters-housing">
+						<h2 class="filters-title">Тип жилья:</h2>
+
+						<input type="checkbox" name="hotel" id="hotel" checked>
+						<label for="hotel">Гостиница</label>
+
+						<input type="checkbox" name="molel" id="molel" checked>
+						<label for="molel">Мотель</label>
+
+						<input type="checkbox" name="apartements" id="apartements" checked>
+						<label for="apartements">Апартаменты</label>
+					</div>
+					<div class="filters-price">
+						<h2 class="filters-title">Стоимость в сутки (Р):</h2>
+
+						<div class="price-result">
 						
-					</div>
-				</div>
-				<input type="submit" class="filters-btn" value="Показать">	
-			</form>
-			
-			<div class="result">
-				<div class="result-sorting">
-					<p>Найдено: 3</p>
-					<p>Сортировка</p>
-					<div class="sorting-category">
-						<a href="#" class="active-sorting">По цене</a>
-						<a href="#">По типу</a>
-						<a href="#">По рейтингу</a>
-					</div>
-					<div class="sorting-arrow">
-						<a href="#" class="arrow active-sorting"></a>
-						<a href="#" class="arrow"></a>
-					</div>
-				</div>
-				<div class="result-hotels">
-					<article class="hotels">
-						<figure class="hotels-photo">
-							<img src="#" alt="Amara Resort">
-						</figure>
-						<div class="hotels-info">
-							<h1 class="hotels-title">Amara Resort & SPA</h1> <!-- А где звездочки потерялись? -->
-							<div class="hotels-stars">
-								<p class="icon-star"></p>
-								<p class="icon-star"></p>
-								<p class="icon-star"></p>
-								<p class="icon-star"></p>
-							</div>
-							<p class="hotels-type">
-								Гостиница
-							</p>
-							<p class="hotels-price">
-								от 3500 р.
-							</p>
-							<div class="hotels-buttons">
-								<a href="#" class="btn-details">Подробнее</a> <!-- для кнопок лучше добавлять префикс .btn тогда их проще найти в коде -->
-								<a href="#" class="btn-reserve">Забронировать</a>
-							</div>
-							<div class="hotels-raitings">
-								<span>Рейтинг: 8,5</span>
-							</div>
 						</div>
-					</article>
-					<article class="hotels">
-						<figure class="hotels-photo">
-							<img src="#" alt="Desert Quail Inn">
-						</figure>
-						<div class="hotels-info">
-							<h1 class="hotels-title">Desert Quail Inn</h1>
-							<div class="hotels-stars">
-								<p class="icon-star"></p>
-								<p class="icon-star"></p>
-							</div>
-							<p class="hotels-type">
-								Мотель
-							</p>
-							<p class="hotels-price">
-								от 2000 р.
-							</p>
-							<div class="hotels-buttons">
-								<a href="#" class="btn-details">Подробнее</a>
-								<a href="#" class="btn-reserve">Забронировать</a>
-							</div>
-							<div class="hotels-raitings">
-								<span>Рейтинг: 8,9</span>
-							</div>
+						<div class="price-range">
+							
 						</div>
-					</article>
-					<article class="hotels">
-						<figure class="hotels-photo">
-							<img src="#" alt="Villas at Poco Diablo">
-						</figure>
-						<div class="hotels-info">
-							<h1 class="hotels-title">Villas at Poco Diablo</h1>
-							<div class="hotels-stars">
-								<p class="icon-star"></p>
-								<p class="icon-star"></p>
-								<p class="icon-star"></p>
-							</div>
-							<p class="hotels-type">
-								Апартаменты
-							</p>
-							<p class="hotels-price">
-								от 4000 р.
-							</p>
-							<div class="hotels-buttons">
-								<a href="#" class="btn-details">Подробнее</a>
-								<a href="#" class="btn-reserve">Забронировать</a>
-							</div>
-							<div class="hotels-raitings">
-								<span>Рейтинг: 9,2</span>
-							</div>
+					</div>
+					<input type="submit" class="filters-btn" value="Показать">	
+				</form>
+				
+				<div class="result">
+					<div class="result-sorting">
+						<p>Найдено: 3</p>
+						<p>Сортировка</p>
+						<div class="sorting-category">
+							<a href="#" class="active-sorting">По цене</a>
+							<a href="#">По типу</a>
+							<a href="#">По рейтингу</a>
 						</div>
-					</article>
+						<div class="sorting-arrow">
+	<!--					Внутри ссылок хорошо бы вставить какой-то текст. Спрячем его с помощью CSS, а в случае если он не загрузится, то текст покажет, что они означают.-->
+							<a href="#" class="arrow active-sorting">по возрастанию</a>
+							<a href="#" class="arrow">по убыванию</a>
+						</div>
+					</div>
+					<div class="result-hotels">
+						<article class="hotels">
+							<figure class="hotels-photo">
+								<img src="#" alt="Amara Resort">
+							</figure>
+							<div class="hotels-info">
+								<h1 class="hotels-title">Amara Resort & SPA</h1>
+								<div class="hotels-stars">
+	<!--							Думаю для звездочек лучше использовать span. Это не похоже на абзац. Далее по коду тоже.-->
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+								</div>
+								<p class="hotels-type">
+									Гостиница
+								</p>
+								<p class="hotels-price">
+									от 3500 р.
+								</p>
+								<div class="hotels-buttons">
+									<a href="#" class="btn-details">Подробнее</a>
+									<a href="#" class="btn-reserve">Забронировать</a>
+								</div>
+								<div class="hotels-raitings">
+									<span>Рейтинг: 8,5</span>
+								</div>
+							</div>
+						</article>
+						<article class="hotels">
+							<figure class="hotels-photo">
+								<img src="#" alt="Desert Quail Inn">
+							</figure>
+							<div class="hotels-info">
+								<h1 class="hotels-title">Desert Quail Inn</h1>
+								<div class="hotels-stars">
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+								</div>
+								<p class="hotels-type">
+									Мотель
+								</p>
+								<p class="hotels-price">
+									от 2000 р.
+								</p>
+								<div class="hotels-buttons">
+									<a href="#" class="btn-details">Подробнее</a>
+									<a href="#" class="btn-reserve">Забронировать</a>
+								</div>
+								<div class="hotels-raitings">
+									<span>Рейтинг: 8,9</span>
+								</div>
+							</div>
+						</article>
+						<article class="hotels">
+							<figure class="hotels-photo">
+								<img src="#" alt="Villas at Poco Diablo">
+							</figure>
+							<div class="hotels-info">
+								<h1 class="hotels-title">Villas at Poco Diablo</h1>
+								<div class="hotels-stars">
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+									<span class="icon-star"></span>
+								</div>
+								<p class="hotels-type">
+									Апартаменты
+								</p>
+								<p class="hotels-price">
+									от 4000 р.
+								</p>
+								<div class="hotels-buttons">
+									<a href="#" class="btn-details">Подробнее</a>
+									<a href="#" class="btn-reserve">Забронировать</a>
+								</div>
+								<div class="hotels-raitings">
+									<span>Рейтинг: 9,2</span>
+								</div>
+							</div>
+						</article>
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
+		</main>
 	
-	<footer class="main-footer clearfix">
-		<div class="footer-contain">
-			<section class="footer-hashtag">
-				<p>#visitsedona</p>
-			</section>
-			<section class="footer-social">
-				<a href="#" class="social social-tw">
-					<img src="#" alt="Твиттер">
-				</a>
-				<a href="#" class="social social-fb">
-					<img src="#" alt="Фейсбук">
-				</a>
-				<a href="#" class="social social-youtb">
-					<img src="#" alt="Youtube">
-				</a>
-			</section>
-			<section class="footer-copyright">
-				<p>Website By</p>
-				<a href="#">
-					<img src="#" alt="HtmlAcademy.ru">
-				</a>
-			</section>
-		</div>
-	</footer>
+		<footer class="main-footer">
+			<div class="footer-contain">
+				<section class="footer-hashtag">
+					<p>#visitsedona</p>
+				</section>
+				<section class="footer-social">
+					<a href="#" class="social social-tw">
+						<img src="#" alt="Твиттер">
+					</a>
+					<a href="#" class="social social-fb">
+						<img src="#" alt="Фейсбук">
+					</a>
+					<a href="#" class="social social-youtb">
+						<img src="#" alt="Youtube">
+					</a>
+				</section>
+				<section class="footer-copyright">
+					<p>Website By</p>
+					<a href="#">
+						<img src="#" alt="HtmlAcademy.ru">
+					</a>
+				</section>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

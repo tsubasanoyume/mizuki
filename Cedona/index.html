@@ -3,160 +3,160 @@
 	<meta charset="UTF-8">
 	<title>Седона</title>
 </head>
-<body class="positioner">
-<!-- У тебя нет центровщика макета. Он будет либо тянуться на всю ширину, либо прижат к левой части. Для данного макета в центровщик можно обернуть всё: header, main и footer.
-Во-первых фон однотонный, значит его можно добавить прям для body. Никаких участков вылазивающих за центровщик нет. Так зачем лишние действия обернем от <body> до </body>  -->
-	<header class="main-header">
-		<div class="header-logo">
-			<a href="index.html">
-				<img src="#" alt="Город Седона" class="logo">
-			</a>
-		</div>
-			<nav class="header-navigation">   <!-- В принципе лишняя обертка. У нас же есть nav -->
-				<ul class="navigation-list"> <!-- Класс лучше перенести к ul, так мы избежим лишней вложенности. Стилизовать же нам в основном нужно Liшки -->
-					<li>
-						<a href="#">Информация</a>
-					</li>
-					<li>
-						<a href="#">Фото и видео</a>
-					</li>
-					<li>
-						<a href="#">Карта штата</a>
-					</li>
-					<li>
-						<a href="hotels.html">Гостиницы</a>
-					</li>
-				</ul>
-			</nav>		
-		</div>
-	</header>
-
-	<main class="main-contain">
-	<!--А куда делся блок с огромной фотографией и буквами? О_о -->
-		<div class="contain-image">
-			<figure>
-				<img src="#" alt="Седона" class="image-big">
-			</figure>
-			<figure>
-				<img src="#" alt="Седона" class="image-words">
-			</figure>
-		</div>
-		<div class="contain-title">
-			<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-			<p>Рассмотрим 5 причин, по которым седона круче Гранд Каньон!</p>
-		</div>
-		<div class="contain-causes main-causes">
-			<h2>Настоящий городок</h2>
-			<p>- №1 -</p> <!-- Нет черточек по бокам -->
-			<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
-			<figure> <!-- Наверное стоит добавить класс, сюда или к изображению. -->
-				<img src="#" alt="Седона" class="image-city">
-			</figure>
-		</div>
-		<div class="contain-features">
-			<div class="features"><!-- 3 одинаковых блока, зачем разные классы? -->
-				<img src="#" alt="Жилье">
-				<h2>Жилье</h2>
-				<p>Рекомендую пожить в настоящем мотеле,  все как в кино!</p>
+<body>
+<!-- Ты не совсем правильно меня поняла. Нуждно добавить класс не к body, а создать div в котором будет весь контент.  -->
+	<div class="positioner">
+		<header class="main-header">
+			<div class="header-logo">
+				<a href="index.html">
+					<img src="#" alt="Город Седона" class="logo">
+				</a>
 			</div>
-			<div class="features">
-				<img src="#" alt="Еда">
-				<h2>Еда</h2>
-				<p>Всегда заказывай фирменный бургер, Вы не разочаруетесь!</p>
+				<nav class="header-navigation">
+					<ul class="navigation-list">
+						<li>
+							<a href="#">Информация</a>
+						</li>
+						<li>
+							<a href="#">Фото и видео</a>
+						</li>
+						<li>
+							<a href="#">Карта штата</a>
+						</li>
+						<li>
+							<a href="hotels.html">Гостиницы</a>
+						</li>
+					</ul>
+				</nav>		
 			</div>
-			<div class="features">
-				<img src="#" alt="Сувениры">
-				<h2>Сувениры</h2>
-				<p>Не только китайского, но и местного производства!</p>
-			</div>
-		</div>
-		<div class="contain-causes main-causes">
-			<figure> <!-- Тоже самое с классом. -->
-				<img src="#" alt="Мост Дьявола" class="image-devil">
-			</figure>
-			<h2>Там есть мост Дьявола</h2>
-			<p>- №2 -</p>
-			<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>			
-		</div>
-		<div class="contain-causes last-causes"> <!-- Неправильно задан класс. Это обертка, а эти 2 класса нужно для каждого дива внутри указать. А эта обертка по сути то даже не нужна. -->
-			<h2>Небольшая площадь</h2>
-			<p>- №3 -</p>
-			<p>Все достопримечательности находятся очень близко</p>			
-		</div>
-		<div class="contain-causes last-causes">
-			<h2>Красивая дорога</h2>
-			<p>- №4 -</p>
-			<p>Ехать в Седону из Лаг-Вегаса совсем не скучно!</p>			
-		</div>
-		<div class="contain-causes last-causes">
-			<h2>Мало туристов</h2>
-			<p>- №5 -</p>
-			<p>Большинство едет в Гранд Каньон и толпится там</p>			
-		</div>
-		<section class="contain-search">
-			<h2 class="search-title">Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-			<div class="search-button">
-				<a href="#" class="btn-search">Поиск гостиницы в Седоне</a> <!-- для кнопок лучше добавлять префикс .btn тогда их проще найти в коде -->
-			</div>
-			<form action="/echo" method="post" class="search-form"> <!-- Этот класс можно назначить форме и не нужна тогда обертка. -->
-				<label> <!--В данном случае проще инпуты обернуть в лэйблы и тогда не нужно париться с id -->
-					Дата заезда
-					<input type="text" name="date-start">
-				</label>
-				<br>
+		</header>
 
-				<label>
-					Дата выезда
-					<input type="text" name="date-end">
-				</label>
-				<br>
-
-				<label>
-					Взрослые
-					<input type="text" name="adult">
-				</label>				
-
-				<label>
-					Дети
-					<input type="text" name="child">
-				</label>
-				<br>
-
-				<input type="submit" value="Найти">
-			</form>
-			<div class="search-map">
+		<main class="main-contain">
+			<div class="contain-image">
 				<figure>
-					<img src="#" alt="Карта">
+					<img src="#" alt="Седона" class="image-big">
+				</figure>
+				<figure>
+					<img src="#" alt="Седона" class="image-words">
 				</figure>
 			</div>
-		</section>
+			<div class="contain-title">
+				<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+				<p>Рассмотрим 5 причин, по которым седона круче Гранд Каньон!</p>
+			</div>
+			<div class="contain-causes main-causes">
+				<h2>Настоящий городок</h2>
+				<p>- №1 -</p>
+				<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+				<figure>
+					<img src="#" alt="Седона" class="image-city">
+				</figure>
+			</div>
+			<div class="contain-features">
+				<div class="features">
+					<img src="#" alt="Жилье">
+					<h2>Жилье</h2>
+					<p>Рекомендую пожить в настоящем мотеле,  все как в кино!</p>
+				</div>
+				<div class="features">
+					<img src="#" alt="Еда">
+					<h2>Еда</h2>
+					<p>Всегда заказывай фирменный бургер, Вы не разочаруетесь!</p>
+				</div>
+				<div class="features">
+					<img src="#" alt="Сувениры">
+					<h2>Сувениры</h2>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+			<div class="contain-causes main-causes">
+				<figure>
+					<img src="#" alt="Мост Дьявола" class="image-devil">
+				</figure>
+				<h2>Там есть мост Дьявола</h2>
+				<p>- №2 -</p>
+				<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>			
+			</div>
+			<div class="contain-causes last-causes">
+				<h2>Небольшая площадь</h2>
+				<p>- №3 -</p>
+				<p>Все достопримечательности находятся очень близко</p>			
+			</div>
+			<div class="contain-causes last-causes">
+				<h2>Красивая дорога</h2>
+				<p>- №4 -</p>
+				<p>Ехать в Седону из Лаг-Вегаса совсем не скучно!</p>			
+			</div>
+			<div class="contain-causes last-causes">
+				<h2>Мало туристов</h2>
+				<p>- №5 -</p>
+				<p>Большинство едет в Гранд Каньон и толпится там</p>			
+			</div>
+			<section class="contain-search">
+				<h2 class="search-title">Заинтересовались?</h2>
+				<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+				<div class="search-button">
+					<a href="#" class="btn-search">Поиск гостиницы в Седоне</a> <!-- для кнопок лучше добавлять префикс .btn тогда их проще найти в коде -->
+				</div>
+				<form action="/echo" method="post" class="search-form">
+					<label>
+						Дата заезда
+						<input type="text" name="date-start">
+					</label>
+					<br>
 
-	</main>
+					<label>
+						Дата выезда
+						<input type="text" name="date-end">
+					</label>
+					<br>
 
-	<footer class="main-footer">
-		<div class="footer-contain">
-			<section class="footer-hashtag">
-				<p>#visitsedona</p>
+					<label>
+						Взрослые
+						<input type="text" name="adult">
+					</label>				
+
+					<label>
+						Дети
+						<input type="text" name="child">
+					</label>
+					<br>
+
+					<input type="submit" value="Найти">
+				</form>
+				<div class="search-map">
+					<figure>
+						<img src="#" alt="Карта">
+					</figure>
+				</div>
 			</section>
-			<section class="footer-social">
-				<a href="#" class="social social-tw">
-					<img src="#" alt="Твиттер">
-				</a>
-				<a href="#" class="social social-fb">
-					<img src="#" alt="Фейсбук">
-				</a>
-				<a href="#" class="social social-youtb">
-					<img src="#" alt="Youtube">
-				</a>
-			</section>
-			<section class="footer-copyright">
-				<p>Website By</p>
-				<a href="#">
-					<img src="#" alt="HtmlAcademy.ru">
-				</a>
-			</section>
-		</div>
-	</footer>
+		</main>
+
+		<footer class="main-footer">
+			<div class="footer-contain">
+				<section class="footer-hashtag">
+					<p>#visitsedona</p>
+				</section>
+				<section class="footer-social">
+					<a href="#" class="social social-tw">
+						<img src="#" alt="Твиттер">
+					</a>
+					<a href="#" class="social social-fb">
+						<img src="#" alt="Фейсбук">
+					</a>
+					<a href="#" class="social social-youtb">
+						<img src="#" alt="Youtube">
+					</a>
+				</section>
+				<section class="footer-copyright">
+					<p>Website By</p>
+					<a href="#">
+						<img src="#" alt="HtmlAcademy.ru">
+					</a>
+				</section>
+			</div>
+		</footer>
+
+	</div>
 </body>
 </html>
