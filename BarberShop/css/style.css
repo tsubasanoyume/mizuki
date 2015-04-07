@@ -24,27 +24,26 @@ h2 {
 }
 
 .container {
-	width: 660px;
+	width: 900px;
 	margin: 0 auto;
 
-	min-height: 20px;
 	padding: 5px;
 }
 
+.navigation-list ul {
+	margin-top: 0;
+}
+
 .navigation-list {
-	width: 520px;
+	width: 520px;	
 
 	float: left;
-
-	min-height: 20px;
 }
 
 .user-block {
 	width: 90px;
 
 	float: right;
-
-	min-height: 50px;
 }
 
 .clearfix::after {
@@ -53,6 +52,117 @@ h2 {
 	clear: both;
 }
 
+.contain {
+	width: 940px;
+	margin: 50px auto;
+}
+
 .contain-header {
-	
+	margin-bottom: 44px;
+}
+
+.filters {
+	width: 200px;
+
+	float: left;
+}
+
+.filters-title {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.filters-maker,
+.filters-category {
+	margin-bottom: 27px;
+}
+
+.products {
+	width: 720px;
+	font-size: 0;
+
+	float: right;
+}
+
+.products-item {
+	width: 220px;
+	font-size: 14px;
+
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.paginator {
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.footer-contacts {
+	width: 310px;
+	margin-right: 90px;
+
+	float: left;
+}
+
+.footer-social {
+	width: 140px;
+
+	float: left;
+}
+
+.footer-copyright {
+	width: 220px;
+
+	float: right;
+}
+
+.contain-images {
+	width: 460px;
+
+	float: left;
+}
+
+.contain-images > figure {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.images-prev {
+	width: 460px;
+	font-size: 0;
+}
+
+.images-prev figure {
+	display: inline-block;
+	margin: 0;
+	margin-right: 20px;	
+}
+
+.images-prev figure:last-child {
+	margin-right: 0;
+}
+
+.contain-info {
+	width: 390px;
+
+	float: right;
+}
+
+.info-header,
+.info-description {
+	margin-bottom: 29px;
+}
+
+.info-stock {
+	float: left;
+}
+
+.info-article {
+	float: right;
+}
+
+.products-price {
+	margin-bottom: 43px;
 }
