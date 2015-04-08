@@ -5,9 +5,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
-		<div class="container clearfix">
-			<nav class="navigation-list">
+	<header class="main-header outline-main">
+		<div class="container clearfix outline-contain">
+			<nav class="navigation-list outline-item">
 				<ul>
 					<li>
 						<a href="#">Главная</a>
@@ -29,25 +29,25 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="user-block">
+			<div class="user-block outline-item">
 				<a class="login" href="#">Войти</a>
 			</div>
 		</div>
 	</header>
 
-	<main class="contain clearfix">
-		<div class="contain-header">
-			<h1 class="contain-title">Средства для ухода</h1>
-			<div class="breadcrumbs">
+	<main class="contain clearfix outline-main">
+		<div class="contain-header outline-contain">
+			<h1 class="contain-title outline-item">Средства для ухода</h1>
+			<div class="breadcrumbs outline-item">
 				<a href="#">Главная</a>
 				<a href="#">Магазин</a>
 				<span class="breadcrumbs-active">Средства для ухода</span>
 			</div>
 		</div>
 
-		<div class="filters">
+		<div class="filters outline-contain">
 			<form action="/echo" method="post">
-				<div class="filters-maker">
+				<div class="filters-maker outline-item">
 					<h2 class="filters-title">Производители:</h2>
 					
 					<input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
@@ -68,7 +68,7 @@
 					<input type="checkbox" name="crew" id="crew" checked>
 					<label for="crew">American Crew</label>
 				</div>
-				<div class="filters-category">
+				<div class="filters-category outline-item">
 					<h2 class="filters-title">Группы товатов:</h2>
 					<input type="radio" name="category" id="shaving-accessories" value="shaving-accessories" checked>
 					<label for="shaving-accessories">Бритвенные пренадлежности</label>
@@ -84,8 +84,8 @@
 			</form>	
 		</div>
 
-		<div class="products">
-			<article class="products-item">
+		<div class="products outline-contain">
+			<article class="products-item outline-item">
 				<a href="catalog-item.html">
 					<img src="img/item-1.jpg" width="220" height="165" alt="Набор для путешествий">
 				</a>
@@ -97,7 +97,7 @@
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<article class="products-item">
+			<article class="products-item outline-item">
 				<a href="#">
 					<img src="img/item-2.jpg" width="220px" height="165px" alt="Увлажняющий кондиционер">
 				</a>
@@ -109,19 +109,19 @@
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<article class="products-item">
+			<article class="products-item outline-item">
 				<a href="#">
 					<img src="img/item-3.jpg" width="220" height="165" alt="Гель для волос">
 				</a>
 				<a href="#">
-					Гель для волос <span class="products-title">"Sauvecito"</span>
+					Гель для волос <br><span class="products-title">"Sauvecito"</span>
 				</a><br>
 				<div class="products-price">
 					290 РУБ.
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<article class="products-item">
+			<article class="products-item outline-item">
 				<a href="#">
 					<img src="img/item-4.jpg" width="220" height="165" alt="Гель для укладки волос">
 				</a>
@@ -133,19 +133,19 @@
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<article class="products-item">
+			<article class="products-item outline-item">
 				<a href="#">
 					<img src="img/item-5.jpg" width="220" height="165" alt="Гель для волос">
 				</a>
 				<a href="#">
-					Гель для волос <span class="products-title">"American Crew"</span>
+					Гель для волос <br><span class="products-title">"American Crew"</span>
 				</a><br>
 				<div class="products-price">
 					300 РУБ.
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<article class="products-item">
+			<article class="products-item outline-item">
 				<a href="#">
 					<img src="img/item-6.jpg" width="220" height="165" alt="Набор для бритья">
 				</a>
@@ -157,7 +157,7 @@
 					<a class="btn" href="#">Купить</a>
 				</div>
 			</article>
-			<div class="paginator"> <!--	Paginator, кстати тоже можно использовать без префикса.		-->
+			<div class="paginator outline-item"> <!--	Paginator, кстати тоже можно использовать без префикса.		-->
 				<a href="#">1</a>
 				<span class="paginator-active">2</span>
 				<a href="#">3</a>
@@ -166,21 +166,21 @@
 		</div>
 		
 	</main>
-	<footer class="main-footer">
-		<div class="container clearfix">
-			<section class="footer-contacts">
+	<footer class="main-footer outline-main">
+		<div class="container clearfix outline-contain">
+			<section class="footer-contacts outline-item">
 				Барбершоп "Бородинский"<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-				<a href="#">Как нас найти</a>
+				<a href="#">Как нас найти</a><br>
 				телефон: +7 (495) 666-02-66
 			</section>
-			<section class="footer-social">
+			<section class="footer-social outline-item">
 				<p>Давайте дружить</p>
 				<a href="#" class="social social-vk">Вконтакте</a>
 				<a href="#" class="social social-fb">Фейсбук</a>
 				<a href="#" class="social social-instgrm">Инстаграм</a>
 			</section>
-			<section class="footer-copyright">
+			<section class="footer-copyright outline-item">
 				<p>Дизайн сайта:</p>
 				<a href="#" class="btn">htmlacademy.ru</a>
 			</section>

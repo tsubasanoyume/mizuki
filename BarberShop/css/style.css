@@ -2,7 +2,7 @@ body {
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: bold;
-	font-family: "PT Sans Narrow";
+	font-family: "PT Sans Narrow";	
 }
 
 h1 {
@@ -15,12 +15,29 @@ h2 {
 	line-height: 42px;
 }
 
-.main-header {
-	padding: 5px 0;
+/* распорка */
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-.outline {
+/* стили для визуализации блоков */
+.outline-main {
 	outline: 2px solid red;
+}
+
+.outline-contain {
+	outline: 2px solid green;
+}
+
+.outline-item {
+	outline: 2px solid blue;
+}
+
+/* стили для хэдэра */
+.main-header {
+	padding: 5px 0;
 }
 
 .container {
@@ -30,41 +47,57 @@ h2 {
 	padding: 5px;
 }
 
+/* стили меню */
 .navigation-list ul {
-	margin-top: 0;
+	margin: 0;
+	margin-left: -40px;
+	margin-right: -40px;
+	list-style: none;
+}
+
+.navigation-list li {
+	display: inline-block;
+}
+
+.navigation-list a {
+	display: block;
+	margin-right: 35px;
 }
 
 .navigation-list {
-	width: 520px;	
+	width: 600px;	
 
 	float: left;
 }
 
+/* стили для входа */
 .user-block {
 	width: 90px;
 
 	float: right;
 }
 
-.clearfix::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
+/* стили контейнера */
 .contain {
 	width: 940px;
 	margin: 50px auto;
+
+	padding: 5px;
 }
 
 .contain-header {
 	margin-bottom: 44px;
+
+	padding: 5px;
 }
 
+/* стили фильтров */
 .filters {
-	width: 200px;
+	width: 190px;
 
 	float: left;
+
+	padding: 5px;
 }
 
 .filters-title {
@@ -77,11 +110,14 @@ h2 {
 	margin-bottom: 27px;
 }
 
+/* стили блока с продуктами */
 .products {
 	width: 720px;
 	font-size: 0;
 
 	float: right;
+
+	padding: 5px;
 }
 
 .products-item {
@@ -94,11 +130,13 @@ h2 {
 	margin-bottom: 20px;
 }
 
+/* стили переключателя страниц */
 .paginator {
 	font-size: 14px;
 	margin-top: 20px;
 }
 
+/* стили футера */
 .footer-contacts {
 	width: 310px;
 	margin-right: 90px;
@@ -106,6 +144,7 @@ h2 {
 	float: left;
 }
 
+/* стили социальных кнопок */
 .footer-social {
 	width: 140px;
 
@@ -118,10 +157,13 @@ h2 {
 	float: right;
 }
 
+/* стили блока с картинками */
 .contain-images {
-	width: 460px;
+	width: 470px;
 
 	float: left;
+
+	padding: 5px;
 }
 
 .contain-images > figure {
@@ -132,6 +174,8 @@ h2 {
 .images-prev {
 	width: 460px;
 	font-size: 0;
+
+	padding: 5px;
 }
 
 .images-prev figure {
@@ -144,10 +188,13 @@ h2 {
 	margin-right: 0;
 }
 
+/* стили блока с информацией по продукту */
 .contain-info {
 	width: 390px;
 
 	float: right;
+
+	padding: 5px;
 }
 
 .info-header,
@@ -156,13 +203,19 @@ h2 {
 }
 
 .info-stock {
+	width: 150px;
+
 	float: left;
 }
 
 .info-article {
+	width: 150px;
+
 	float: right;
 }
 
+/* стили для кнопки с ценой */
 .products-price {
 	margin-bottom: 43px;
 }
+
