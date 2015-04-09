@@ -3,6 +3,9 @@ body {
 	line-height: 21px;
 	font-family: "PT Sans";
 	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 h2 {
@@ -13,3 +16,75 @@ h2 {
 h3 {
 	font-size: 16px;
 }
+
+.outline-positioner {
+	outline: 2px solid red;
+}
+
+.outline-block {
+	outline: 2px solid green;
+}
+
+.outline-div {
+	outline: 2px solid blue;
+}
+
+.outline-item {
+	outline: 2px solid yellow;
+}
+
+.positioner {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.contain-image figure,
+.search-map figure {
+	margin: 0;
+	padding: 0;
+}
+
+.image-words {
+	position: absolute;
+	top: 15%;
+	left: 38%;
+}
+
+.logo {
+	position: relative;
+	
+}
+
+.navigation-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.navigation-list a {
+	display: block;
+	margin-right: 120px;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.header-navigation {
+	min-height: 56px;
+}
+
+.navigation-list li {
+	display: inline-block;
+}
+
+.features {
+	display: inline-block;
+	width: 33%;
+}
+
+.last-causes {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+}
+
