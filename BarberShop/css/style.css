@@ -43,7 +43,7 @@ h2 {
 	width: 960px; /*Почему 900? Ширина макета 960*/
 	margin: 0 auto;
 
-	padding: 0 10px; /*Сверху нет отступов. Только по краям. 10px*/
+	padding: 0; /*Сверху нет отступов. Только по краям. 10px*/
 }
 
 .main-contain .container {
@@ -55,6 +55,7 @@ h2 {
 	margin: 0;
 	padding: 0; /*Что за костыли? Не забывай у списков обнулять padding*/
 	list-style: none;
+	font-size: 0;
 }
 
 .navigation-list li {
@@ -63,7 +64,9 @@ h2 {
 
 .navigation-list a {
 	display: block;
-	margin-right: 40px;
+	margin-right: 25px;
+	padding: 0 10px;
+	font-size: 14px;
 }
 
 .navigation-list li:last-child  a{
