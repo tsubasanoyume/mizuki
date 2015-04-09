@@ -35,29 +35,27 @@ h2 {
 	outline: 2px solid blue;
 }
 
-.outline-div {
-	outline: 2px solid yellow;
-}
-
 .container {
-	width: 960px; /*Почему 900? Ширина макета 960*/
+	width: 960px; 
 	margin: 0 auto;
+/*   Текст не должен липнуть к краям. На макете видно, что есть отступ слева и справа по 10px*/
 
-	 /*Сверху нет отступов. Только по краям. 10px*/
+	padding: 0 10px;
 }
 
+ /*Зачем?*/
+
+
+ /*У margin-bottom одно свойство должно быть.*/
 .main-contain .container {
-	padding: 0;
+	padding: 30px 10px;
 }
 
-.main-header {
-	margin-bottom: 30px auto;
-}
 
 /* стили меню */
 .navigation-list ul {
 	margin: 0;
-	padding: 0; /*Что за костыли? Не забывай у списков обнулять padding*/
+	padding: 0;
 	list-style: none;
 	font-size: 0;
 }
@@ -78,7 +76,7 @@ h2 {
 }
 
 .navigation-list {
-	width: 650px;	
+	width: 800px;	/*А если еще меню добавить? Сделай места побольше. Там еще куча пустого места получается.*/
 
 	float: left;
 }
@@ -99,7 +97,7 @@ h2 {
 
 /* стили фильтров */
 .filters {
-	width: 190px;
+	width: 200px;
 
 	float: left;
 }
@@ -116,7 +114,7 @@ h2 {
 
 /* стили блока с продуктами */
 .products {
-	width: 720px;
+	width: 700px;
 	font-size: 0;
 
 	float: right;
@@ -128,8 +126,13 @@ h2 {
 
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 20px;
+	margin-right: 20px; /*Элементы должны касаться правой части контейнера.*/
 	margin-bottom: 20px;
+}
+
+.products-item:nth-child(3),
+.products-item:nth-child(6) {
+	margin-right: 0;
 }
 
 /* стили переключателя страниц */
@@ -213,8 +216,4 @@ h2 {
 /* стили для кнопки с ценой */
 .contain-info .products-price {
 	margin-bottom: 43px;
-}
-
-.products .products-price {
-	margin: 20px;
 }
