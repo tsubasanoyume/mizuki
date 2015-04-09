@@ -51,8 +51,8 @@ h3 {
 }
 
 .logo {
-	position: relative;
-	
+	position: absolute;
+	left: 46%;
 }
 
 .navigation-list ul {
@@ -88,3 +88,24 @@ h3 {
 	vertical-align: top;
 }
 
+.footer-contain {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+
+.footer {
+	position: absolute;
+	min-height: 120px;
+
+}
+
+.maker {
+	vertical-align: middle;
+}
+
+.social {
+	width: 45px;
+	height: 45px;
+	background-color: #81b3d2; 
+}
