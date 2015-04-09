@@ -3,6 +3,8 @@ body {
 	line-height: 24px;
 	font-weight: bold;
 	font-family: "PT Sans Narrow";	
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
