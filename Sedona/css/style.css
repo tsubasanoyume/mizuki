@@ -10,11 +10,21 @@ body {
 
 h2 {
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 26px;	
+}
+
+figure {
+	margin: 0;
 }
 
 h3 {
 	font-size: 16px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .outline-positioner {
@@ -38,18 +48,6 @@ h3 {
 	margin: 0 auto;
 }
 
-.contain-image figure,
-.search-map figure {
-	margin: 0;
-	padding: 0;
-}
-
-.image-words {
-	position: absolute;
-	top: 15%;
-	left: 38%;
-}
-
 .logo {
 	position: absolute;
 	left: 46%;
@@ -64,31 +62,92 @@ h3 {
 
 .navigation-list a {
 	display: block;
-	padding: 0;
+	padding: 15px;
 	font-size: 14px;
-}
-
-.header-navigation {
-	min-height: 56px;
 }
 
 .navigation-list li {
 	display: inline-block;
 	width: 20%;
-	text-align: center;
-	vertical-align: middle;
-	margin-right: 100px;
+	min-height: 56px;
+}
+
+.navigation-list li:nth-child(2){
+	margin-right: 120px;
+}
+
+.navigation-list li:nth-child(3){
+	margin-left: 120px;
+}
+
+
+.contain-image {
+	margin-bottom: 50px;
+}
+
+.image-words {
+	position: absolute;
+	top: 15%;
+	left: 771px;
+}
+
+.contain-title {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.contain-title h2 {
+	margin-bottom: 30px;
+}
+
+.cause-1 {
+	margin-bottom: 50px;
+}
+
+.cause-1 div {
+	width: 33%;
+	float: left;
+	padding-bottom: 60px;
+}
+
+.contain-causes h2 {
+	padding-top: 50px;
+}
+
+.cause-1 figure {
+	width: 67%;
+	float: right;
 }
 
 .features {
 	display: inline-block;
+	vertical-align: top;
 	width: 33%;
+	margin-bottom: 70px;
+}
+
+.cause-2 figure {
+	width: 67%;
+	float: left;	
+}
+
+.cause-2 div {
+	width: 33%;
+	float: right;
+	padding-bottom: 60px;
 }
 
 .last-causes {
 	width: 33%;
 	display: inline-block;
 	vertical-align: top;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.contain-search {
+	
 }
 
 .footer-contain {
