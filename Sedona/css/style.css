@@ -64,7 +64,6 @@ h3 {
 
 .navigation-list a {
 	display: block;
-	margin-right: 120px;
 	padding: 0 10px;
 	font-size: 14px;
 }
@@ -75,6 +74,10 @@ h3 {
 
 .navigation-list li {
 	display: inline-block;
+	width: 20%;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 100px;
 }
 
 .features {
