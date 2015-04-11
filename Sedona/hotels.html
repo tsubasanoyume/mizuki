@@ -7,33 +7,31 @@
 <body>
 	<div class="positioner outline-positioner">
 		<header class="main-header outline-block">
-		<div class="header-logo outline-div">
-			<a href="index.html">
-				<img src="#" alt="Город Седона" class="logo">
-			</a>
-		</div>
-		<div class="header-navigation outline-div">
-			<nav class="navigation-list">
-				<ul>
-					<li>
+			<div class="header-logo outline-div">
+				<a href="index.html">
+					<img src="img/logo.png" alt="Город Седона" class="logo">
+				</a>
+			</div>
+			<nav class="header-navigation outline-div">
+				<ul class="navigation-list outline-item">
+					<li class="outline-div">
 						<a href="#">Информация</a>
 					</li>
-					<li>
+					<li class="outline-div">
 						<a href="#">Фото и видео</a>
 					</li>
-					<li>
+					<li class="outline-div">
 						<a href="#">Карта штата</a>
 					</li>
-					<li>
+					<li class="outline-div">
 						<a href="hotels.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>		
-		</div>
 		</header>
 
 		<main class="main-contain outline-block">
-			<div class="filters outline-div">
+			<div class="filters clearfix outline-div">
 				<form action="/echo" method="post">
 					<div class="filters-infrastructure outline-item">
 						<h3 class="filters-title">Инфраструктура:</h3>
@@ -68,114 +66,113 @@
 						<div class="price-range">
 							
 						</div>
-					</div>
-					<input type="submit" class="filters-btn" value="Показать">	
+						<input type="submit" class="filters-btn" value="Показать">
+					</div>						
 				</form>
-				
-				<div class="result outline-div">
-					<div class="result-sorting outline-item">
-						<p>Найдено: 3</p>
+			</div>
+			<div class="result outline-div">
+				<div class="result-sorting clearfix outline-item">
+					<p>Найдено: 3</p>				
+					<div class="sorting-category">
 						<p>Сортировка</p>
-						<div class="sorting-category">
-							<a href="#" class="active-sorting">По цене</a>
-							<a href="#">По типу</a>
-							<a href="#">По рейтингу</a>
-						</div>
-						<div class="sorting-arrow">
-							<a href="#" class="arrow active-sorting">по возрастанию</a>
-							<a href="#" class="arrow">по убыванию</a>
-						</div>
+						<a href="#" class="active-sorting">По цене</a>
+						<a href="#">По типу</a>
+						<a href="#">По рейтингу</a>
 					</div>
-					<div class="result-hotels outline-item">
-						<article class="hotels outline-item">
-							<figure class="hotels-photo">
-								<img src="img/hotels-1.jpg" width="135" height="90" alt="Amara Resort">
-							</figure>
-							<div class="hotels-info">
-								<h2 class="hotels-title">Amara Resort & SPA</h2>
-								<div class="hotels-stars">
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-								</div>
-								<p class="hotels-type">
-									Гостиница
-								</p>
-								<p class="hotels-price">
-									от 3500 р.
-								</p>
-								<div class="hotels-buttons">
-									<a href="#" class="btn-details">Подробнее</a>
-									<a href="#" class="btn-reserve">Забронировать</a>
-								</div>
-								<div class="hotels-raitings">
-									<span>Рейтинг: 8,5</span>
-								</div>
-							</div>
-						</article>
-						<article class="hotels outline-item">
-							<figure class="hotels-photo">
-								<img src="img/hotels-2.jpg" width="135" height="90" alt="Desert Quail Inn">
-							</figure>
-							<div class="hotels-info">
-								<h2 class="hotels-title">Desert Quail Inn</h2>
-								<div class="hotels-stars">
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-								</div>
-								<p class="hotels-type">
-									Мотель
-								</p>
-								<p class="hotels-price">
-									от 2000 р.
-								</p>
-								<div class="hotels-buttons">
-									<a href="#" class="btn-details">Подробнее</a>
-									<a href="#" class="btn-reserve">Забронировать</a>
-								</div>
-								<div class="hotels-raitings">
-									<span>Рейтинг: 8,9</span>
-								</div>
-							</div>
-						</article>
-						<article class="hotels outline-item">
-							<figure class="hotels-photo">
-								<img src="img/hotels-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-							</figure>
-							<div class="hotels-info">
-								<h2 class="hotels-title">Villas at Poco Diablo</h2>
-								<div class="hotels-stars">
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-									<span class="icon-star"></span>
-								</div>
-								<p class="hotels-type">
-									Апартаменты
-								</p>
-								<p class="hotels-price">
-									от 4000 р.
-								</p>
-								<div class="hotels-buttons">
-									<a href="#" class="btn-details">Подробнее</a>
-									<a href="#" class="btn-reserve">Забронировать</a>
-								</div>
-								<div class="hotels-raitings">
-									<span>Рейтинг: 9,2</span>
-								</div>
-							</div>
-						</article>
+					<div class="sorting-arrow">
+						<a href="#" class="arrow active-sorting">по возрастанию</a>
+						<a href="#" class="arrow">по убыванию</a>
 					</div>
+				</div>				
+				<div class="result-hotels outline-item">
+					<article class="hotels clearfix outline-item">
+						<figure class="hotels-photo">
+							<img src="img/hotels-1.jpg" width="135" height="90" alt="Amara Resort">
+						</figure>
+						<div class="hotels-info">
+							<h2 class="hotels-title">Amara Resort & SPA</h2>
+							<p class="hotels-type">
+								Гостиница
+							</p>
+							<p class="hotels-price">
+								от 3500 р.
+							</p>
+							<div class="hotels-buttons">
+								<a href="#" class="btn-details">Подробнее</a>
+								<a href="#" class="btn-reserve">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels-raitings">
+							<div class="hotels-stars">
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+							</div>
+							<p>Рейтинг: 8,5</p>
+						</div>
+					</article>
+					<article class="hotels clearfix outline-item">
+						<figure class="hotels-photo">
+							<img src="img/hotels-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+						</figure>
+						<div class="hotels-info">
+							<h2 class="hotels-title">Desert Quail Inn</h2>
+							<p class="hotels-type">
+								Мотель
+							</p>
+							<p class="hotels-price">
+								от 2000 р.
+							</p>
+							<div class="hotels-buttons">
+								<a href="#" class="btn-details">Подробнее</a>
+								<a href="#" class="btn-reserve">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels-raitings">
+							<div class="hotels-stars">
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+							</div>
+							<p>Рейтинг: 8,9</p>
+						</div>
+					</article>
+					<article class="hotels clearfix outline-item">
+						<figure class="hotels-photo">
+							<img src="img/hotels-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+						</figure>
+						<div class="hotels-info">
+							<h2 class="hotels-title">Villas at Poco Diablo</h2>
+							<p class="hotels-type">
+								Апартаменты
+							</p>
+							<p class="hotels-price">
+								от 4000 р.
+							</p>
+							<div class="hotels-buttons">
+								<a href="#" class="btn-details">Подробнее</a>
+								<a href="#" class="btn-reserve">Забронировать</a>
+							</div>
+						</div>
+						<div class="hotels-raitings">
+							<div class="hotels-stars">
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+								<span class="icon-star"></span>
+							</div>
+							<p>Рейтинг: 9,2</p>
+						</div>
+					</article>
 				</div>
 			</div>
 		</main>
 	
 		<footer class="main-footer outline-block">
-			<div class="footer-contain outline-div">
-				<section class="footer-hashtag">
+			<div class="footer outline-div">
+				<section class="footer-contain outline-div">
 					<p>#visitsedona</p>
 				</section>
-				<section class="footer-social">
+				<section class="footer-contain outline-div">
 					<a href="#" class="social social-tw">
 						<img src="#" alt="Твиттер">
 					</a>
@@ -186,10 +183,10 @@
 						<img src="#" alt="Youtube">
 					</a>
 				</section>
-				<section class="footer-copyright">
-					<p>Website By</p>
+				<section class="footer-contain maker outline-div">
+					Website By	
 					<a href="#">
-						<img src="#" alt="HtmlAcademy.ru">
+						<img src="img/logo-footer.png" alt="HtmlAcademy.ru">
 					</a>
 				</section>
 			</div>

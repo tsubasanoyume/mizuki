@@ -50,7 +50,7 @@
 					<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<figure>
-					<img src="img/bg-features-1.jpg" width="800" height="256" alt="Седона" class="image-city outline-item">
+					<img src="img/bg-features-1.jpg" width="800" height="256" alt="Седона" class="image-city">
 				</figure>
 			</div>
 			<div class="contain-features outline-div">
@@ -72,7 +72,7 @@
 			</div>
 			<div class="contain-causes cause-2 clearfix outline-div">
 				<figure>
-					<img src="img/bg-features-2.jpg" width="800" height="256" alt="Мост Дьявола" class="image-devil outline-item">
+					<img src="img/bg-features-2.jpg" width="800" height="256" alt="Мост Дьявола" class="image-devil">
 				</figure>
 				<div class="outline-block">
 					<h2>Там есть мост Дьявола</h2>
@@ -95,24 +95,24 @@
 				<p>- №5 -</p>
 				<p>Большинство едет в Гранд Каньон и толпится там</p>			
 			</div>
-			<section class="contain-search outline-div">
-				<div class="outline-block">
-					<h2 class="search-title">Заинтересовались?</h2>
+			<section class="contain-search">
+				<div class="search-title outline-block">
+					<h2>Заинтересовались?</h2>
 					<p>Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 				</div>
-				<div class="search-button">
+				<div class="search-button outline-block">
 					<a href="#" class="btn-search">Поиск гостиницы в Седоне</a> 
 				</div>
-				<form action="/echo" method="post" class="search-form">
+				<form action="/echo" method="post" class="search-form outline-block">
 					<label>
 						Дата заезда
-						<input type="text" name="date-start">
+						<input type="text" name="date-start" class="date">
 					</label>
 					<br>
 
 					<label>
 						Дата выезда
-						<input type="text" name="date-end">
+						<input type="text" name="date-end" class="date">
 					</label>
 					<br>
 
@@ -129,12 +129,12 @@
 
 					<input type="submit" value="Найти">
 				</form>
-				<div class="search-map outline-item">
-					<figure>
-						<img src="img/map.jpg" width="1200" height="747" alt="Карта">
-					</figure>
-				</div>
 			</section>
+			<div class="search-map">
+				<figure>
+					<img src="img/map.jpg" width="1200" height="747" alt="Карта">
+				</figure>
+			</div>
 		</main>
 
 		<footer class="main-footer outline-block">
