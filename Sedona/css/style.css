@@ -554,7 +554,6 @@ input[class="count"] {
 .filters,
 .result-sorting,
 .hotels {	
-	min-width: 708px;
 	max-width: 1057px;
 	padding: 0 31px;
 	margin: 0 auto;	
@@ -849,6 +848,11 @@ a.arrow {
 	float: left;
 }
 
+.hotels-photo img {
+	width: 135px;
+	height: 90px;
+}
+
 .result-sorting>p {
 	font-size: 21px;
 	line-height: 26px;
@@ -860,16 +864,12 @@ a.arrow {
 	margin: 0;
 }
 
-.hotels-info {
-	margin-top: -5px;
-}
-
 .hotels-type,
 .hotels-price {
 	display: inline-block;
 	vertical-align: top;
 
-	padding-bottom: 14px;
+	padding-bottom: 8px;
 }
 
 .hotels-type {
@@ -952,7 +952,6 @@ a.arrow {
 .icon-star {
 	color: #81b3d2;
 	font-size: 19px;
-	margin-right: -6px;
 }
 
 .map {
