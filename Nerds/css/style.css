@@ -88,10 +88,11 @@ h3 {
 
 h4 {
 	text-transform: uppercase;
+	font-weight: normal;
 }
 
 .clearfix:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -113,7 +114,7 @@ h4 {
 }
 
 .logo {
-	width: 300px;
+	width: 318px;
 	float: left;
 }
 
@@ -131,7 +132,7 @@ h4 {
 .navigation-list li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 20px;
+	margin-right: 45px;
 	
 	font-size: 14px;
 	line-height: 30px;
@@ -141,16 +142,12 @@ h4 {
 .navigation-list a {
 	display: block;
 	padding-top: 28px;
-	padding-right: 10px;
-	padding-left: 10px;
 
 	text-decoration: none;
 	color: #000;
 }
 
-.navigation-list a:hover,
-.header-basket a:hover,
-.header-basket span:hover {
+.navigation-list a:hover {
 	color: #fb565a;
 }
 
@@ -167,8 +164,8 @@ h4 {
 
   	position: absolute;
   	bottom: 0;
-  	left: 10px;
-  	right: 10px;
+  	left: 0;
+  	right: 0;
 
   	height: 2px;
 
@@ -190,6 +187,121 @@ h4 {
 }
 */
 
-.backet {
-	
+li.basket {
+	margin-right: 0;	
 }
+
+span.icon-basket {
+	color: #bdbdbd;
+	padding-right: 10px;
+}
+
+.contain-some {
+	background-color: #eeeeee;
+}
+
+.contain-introduction {
+	overflow: auto;
+	padding-top: 27px;
+}
+
+.contain-title {
+	width: 400px;
+	float: left;
+}
+
+.contain-title h2 {
+	margin-bottom: 27px;
+}
+
+.contain-title p {
+	margin-bottom: 33px;
+}
+
+.contain-image {
+	width: 400px;
+	min-height: 300px;
+	float: right;	
+	margin: 0;
+}
+
+.image1 {
+	text-align: right;
+	margin-top: 10px;
+}
+
+.btn {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	background: #fb565a;
+	text-align: center;
+	padding: 13px 0;
+	width: 140px;
+	border-radius: 5px;
+}
+
+.btn-more {
+	width: 240px;
+}
+
+.contain-features {
+	padding: 80px 0;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.features-item {
+	width: 240px;
+	font-size: 15px;
+	display: inline-block;
+	margin-right: 76px;
+}
+
+.features-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.features-item p {
+	margin-bottom: 32px;
+}
+
+.btn-reserve-green {
+	background: #00ca74;
+}
+
+.btn-reserve-yellow {
+	background: #efc84a;
+}
+
+.contain-info {
+	padding: 50px 0;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.info-title h2 {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.info-title-nerds figure {
+	margin: 0;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.info-title,
+.info-features {
+	width: 580px;
+	float: left;
+}
+
+.info-title-nerds,
+.info-features-work {
+	width: 240px;
+	float: right;
+}
+
